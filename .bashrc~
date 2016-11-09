@@ -1,9 +1,7 @@
 ############################################################
-# Simple and Cool Bash Terminal
+# Simple but Cute and Helpful (TM) Bash Settings
 #
-# Maden by kirtika.ruchandani@gmail.com
-#
-# Edited by msbuyukcaglayan@gmail.com
+# cat feedback >> "kirtika.ruchandani@gmail.com"
 ############################################################
 
 #!/usr/bin/env bash
