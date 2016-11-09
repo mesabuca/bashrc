@@ -11,10 +11,6 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-# User Info
-
-export USERNAME="Kirtika Ruchandani"
-export NICKNAME="rkirti"
 
 # Distribute bashrc into smaller, more specific files
 
@@ -25,12 +21,42 @@ source .shells/alias
 source .shells/prompt   # Fancy prompt with time and current working dir
 source .shells/git      # Conveniences - Display current branch etc
 
+
+
+#!/bin/bash
+# term_size3 - Dynamically display terminal window size
+#              with text centering
+
 # Welcome message
-echo -ne "Good Morning, $NICKNAME! It's "; date '+%A, %B %-d %Y'
-echo -e "And now your moment of Zen:"; fortune
-echo
-echo "Hardware Information:"
-sensors  # Needs: 'sudo apt-get install lm-sensors'
-uptime   # Needs: 'sudo apt-get install lsscsi'
-lsscsi
-free -m
+        width=$(tput cols)
+        height=$(tput lines)
+        length=${#USER}+7
+        clear
+        tput cup $(((height / 2) - 1)) $(((width / 2) - (length / 2) - 4))
+	printf "W"
+	sleep 0.1
+	printf "E"
+	sleep 0.1
+	printf "L"
+	sleep 0.1
+	printf "C"
+	sleep 0.1
+	printf "O"
+	sleep 0.1
+	printf "M"
+	sleep 0.1
+	printf "E "
+	sleep 0.1
+	declare -a a
+	for ((i=0; i<${#USER}; i++)); do 
+		a[$i]="${USER:$i:1}" 
+		printf ${a[$i]} | tr '[:lower:]' '[:upper:]'
+		sleep 0.1
+	done
+sleep 2
+clear
+archey
+sleep 2
+clear
+
+
