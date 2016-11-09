@@ -1,6 +1,7 @@
 ## myTerminal
 > Graphical Bash Terminal
 > Useful Shortcuts
+
 ### Installing
 #### Dependecies
 ```bash
