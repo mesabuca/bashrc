@@ -18,9 +18,9 @@ mv bashrc/.bashrc ~/
 mv bashrc/.shells ~/
 ```
 ### Screen Captures
-\n\n
+
 ![Start up](/img/Startup.png)
-\n\n
+
 ![System Informations](/img/SystemInfos.png)
-\n\n
+
 ![Prompt](/img/Prompt.png)
