@@ -28,35 +28,30 @@ source .shells/git      # Conveniences - Display current branch etc
 #              with text centering
 
 # Welcome message
-        width=$(tput cols)
-        height=$(tput lines)
-        length=${#USER}+7
-        clear
-        tput cup $(((height / 2) - 1)) $(((width / 2) - (length / 2) - 4))
-	printf "W"
+sleep 1
+width=$(tput cols)
+height=$(tput lines)
+length=${#USER}+7
+clear
+tput cup $(((height / 2) - 1)) $(((width / 2) - (length / 2) - 4))
+s="WELCOME"
+for ((i=0; i<${#s}; i++)); do 
+	b[$i]="${s:$i:1}" 
+	printf ${b[$i]}
+	sleep 0.08
+done
+printf " "
+for ((i=0; i<${#USER}; i++)); do 
+	a[$i]="${USER:$i:1}" 
+	printf ${a[$i]} | tr '[:lower:]' '[:upper:]'
 	sleep 0.1
-	printf "E"
-	sleep 0.1
-	printf "L"
-	sleep 0.1
-	printf "C"
-	sleep 0.1
-	printf "O"
-	sleep 0.1
-	printf "M"
-	sleep 0.1
-	printf "E "
-	sleep 0.1
-	declare -a a
-	for ((i=0; i<${#USER}; i++)); do 
-		a[$i]="${USER:$i:1}" 
-		printf ${a[$i]} | tr '[:lower:]' '[:upper:]'
-		sleep 0.1
-	done
+done
 sleep 2
 clear
 archey
 sleep 2
 clear
+
+
 
 
