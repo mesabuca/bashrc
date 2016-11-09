@@ -24,3 +24,29 @@ mv bashrc/.shells ~/
 ![System Informations](/img/SystemInfos.png)
 \n\n
 ![Prompt](/img/Prompt.png)
+
+### Shortcuts
+
+```
+ga	=	'git add'
+gb	=	'git br' 
+gd	=	'git diff' 
+gdc	=	'git diff --cached' 
+gl	=	'git log'
+gp	=	'git pull' 
+gs	=	'git status' 
+gst	=	'git stash' 
+gplo	=	'git pull origin master'
+gbv	=	'git branch -vv'
+gdmno	=	'git diff master  --name-only'
+gpo     =       'git push origin master'
+gd      =       'git diff'
+gr      =       'git reflog'
+glf     =       'git ls-files'
+ll	=	'ls -lh'
+lal	=	'ls -alh'
+la	=	'ls -A'
+pms	=	'sudo pm-suspend'
+psg	=	'ps -A | grep'
+l	=	'ls -CF'
+```
