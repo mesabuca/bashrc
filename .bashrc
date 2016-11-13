@@ -48,7 +48,7 @@ for ((i=0; i<${#USER}; i++)); do
 done
 sleep 2
 clear
-archey
+neofetch
 sleep 2
 clear
 

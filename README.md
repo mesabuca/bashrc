@@ -5,9 +5,9 @@
 ### Installing
 #### Dependecies
 ```bash
-sudo apt-get install lsb-release scrot
-wget http://github.com/downloads/djmelik/archey/archey-0.2.8.deb
-sudo dpkg -i archey-0.2.8.deb
+sudo add-apt-repository ppa:dawidd0811/neofetch
+sudo apt-get update
+sudo apt-get install neofetch
 ```
 
 #### myTerminal
