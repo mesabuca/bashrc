@@ -38,7 +38,7 @@ s="WELCOME"
 for ((i=0; i<${#s}; i++)); do 
 	b[$i]="${s:$i:1}" 
 	printf ${b[$i]}
-	sleep 0.08
+	sleep 0.1
 done
 printf " "
 for ((i=0; i<${#USER}; i++)); do 
